@@ -5,6 +5,8 @@ def fizzbuzz(number)
     "fizz"
   elsif number % 5 == 0
     "buzz"
+  elsif !number.is_a? Integer
+    "not a number" 
   else
     number
   end

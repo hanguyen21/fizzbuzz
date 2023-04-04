@@ -29,4 +29,10 @@ describe 'fizzbuzz' do
         expect(fizzbuzz(10)).to eq "buzz"
         expect(fizzbuzz(20)).to eq "buzz"
     end
+
+    it 'returns "not a number" when passed a string' do
+        expect(fizzbuzz("a")).to eq "not a number"
+        expect(fizzbuzz("hello")).to eq "not a number"
+        expect(fizzbuzz("1")).to eq "not a number"
+    end
     end
